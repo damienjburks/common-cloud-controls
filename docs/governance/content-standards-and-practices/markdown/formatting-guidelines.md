@@ -15,7 +15,7 @@
 
 ## Introduction
 
-This document outlines the formatting guidelines for Markdown files. To maintain consistency and readability across all documentation, we use `prettier`, an opinionated code formatter that enforces a uniform style.
+This document outlines the formatting guidelines for Markdown files. To maintain consistency and readability across all documentation, we use `prettier`, an opinionated code formatter that enforces a uniform style. Adhering to these guidelines will ensure consistency across all written content and enhance readability for everyone across all of the [WG].
 
 ## Enabled Rules
 
@@ -97,10 +97,14 @@ Use tables to organize data effectively.
 | Paragraph | Text        |
 ```
 
-### Disabled Rules
+## Disabled Rules
 
-TBD
+- **MD013/line-length**: The restriction on line length is disabled.
+- **MD034/no-bare-urls**: The restriction on using bare URLs is disabled.
+- **MD043/required-headings**: The requirement for a specific heading structure is disabled.
 
 ## Conclusion
 
 Adhering to these formatting guidelines and using `prettier` will help ensure that our Markdown documents are not only consistent but also maintain a high standard of quality and readability. Regular use of `prettier` will streamline the document creation process, making it easier for everyone to produce well-formatted documentation.
+
+[WG]: <../../community-groups.md#working-groups>
