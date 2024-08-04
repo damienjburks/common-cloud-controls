@@ -6,7 +6,7 @@ on:
 
 jobs:
   run-auto-formatter:
-    needs: [run-linting-check, link-checker]
+    #needs: [run-linting-check, link-checker]
     uses: ./.github/workflows/auto-formatter.yml
     permissions:
       pull-requests: write
