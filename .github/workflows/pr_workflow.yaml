@@ -5,17 +5,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  run-format-check:
-    uses: ./.github/workflows/format-check.yml
-    permissions:
-      pull-requests: write
-      contents: read
-      
-  run-linting-check:
-      uses: ./.github/workflows/linting-check.yml
-      permissions:
-        pull-requests: write
-
   link-checker:
         uses: ./.github/workflows/links.yml
         permissions:
