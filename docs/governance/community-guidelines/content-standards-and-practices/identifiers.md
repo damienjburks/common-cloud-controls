@@ -2,14 +2,14 @@
 
 This document provides a standardized approach for assigning unique identifiers (IDs) to various entities within the CCC Taxonomy, including service types, service categories, features, threats, controls, test requirements, and tests. Adhering to this standard ensures consistency and clarity across all related documentation and implementations.
 
-| **ID Type**          | **Format**                                 | **Example**           |
-|----------------------|--------------------------------------------|-----------------------|
-| **Service Type**     | `CCC.<ServiceType>`                        | `CCC.Storage`         |
-| **Service Category** | `CCC.<ServiceCategory>`                    | `CCC.ObjStor`         |
-| **Feature**          | `CCC.<ServiceCategory>.F<##>`              | `CCC.ObjStor.F01`     |
+| **ID Type**          | **Format**                                  | **Example**            |
+| -------------------- | ------------------------------------------- | ---------------------- |
+| **Service Type**     | `CCC.<ServiceType>`                         | `CCC.Storage`          |
+| **Service Category** | `CCC.<ServiceCategory>`                     | `CCC.ObjStor`          |
+| **Feature**          | `CCC.<ServiceCategory>.F<##>`               | `CCC.ObjStor.F01`      |
 | **Threat**           | `CCC.<ServiceCategory>.TH<##>`              | `CCC.RDMS.TH01`        |
-| **Control**          | `CCC.<ServiceCategory>.C<##>`              | `CCC.VM.C01`          |
-| **Test Requirement** | `CCC.<ServiceCategory>.C<##>.TR<##>`       | `CCC.VM.C01.TR01`     |
+| **Control**          | `CCC.<ServiceCategory>.C<##>`               | `CCC.VM.C01`           |
+| **Test Requirement** | `CCC.<ServiceCategory>.C<##>.TR<##>`        | `CCC.VM.C01.TR01`      |
 | **Test**             | `CCC.<ServiceCategory>.C<##>.TR<##>.TE<##>` | `CCC.VM.C01.TR01.TE01` |
 
 ## Service Types
@@ -51,7 +51,7 @@ Each feature ID follows the format `CCC.<ServiceCategory>.F<##>`.
 ## Threats
 
 Threats are potential security risks associated with a service category.
-Controls and threats have a "many to many" releationship, where 
+Controls and threats have a "many to many" releationship, where
 
 Each threat ID follows the format `CCC.<ServiceCategory>.TH<##>`.
 
@@ -74,7 +74,7 @@ Each control ID follows the format `CCC.<ServiceCategory>.C<##>`.
 
 ## 6. Test Requirements
 
-Test requirements are specific conditions or criteria that must be met to validate the associated control. 
+Test requirements are specific conditions or criteria that must be met to validate the associated control.
 Each Test Requirement will map to a set of Tests.
 
 Each test requirement ID follows the format `CCC.<ServiceCategory>.C<##>.TR<##>`.
