@@ -53,7 +53,7 @@ jobs:
             filename=$(basename "$md_file" .md)
             
             # Check if the filename contains "release-notes"
-            if [[ $filename != *"release-notes"* ]]; then
+            if [[ $filename != *"release_notes"* ]]; then
                 echo "Converting $md_file to $filename.pdf"
                 docker run --rm -v "$PWD:/app" jmaupetit/md2pdf "./artifacts/$filename.md" "./artifacts/$filename.pdf"
             else
