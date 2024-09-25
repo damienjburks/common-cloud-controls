@@ -51,7 +51,7 @@ jobs:
               filename=$(basename "$md_file" .md)
               echo "Converting $md_file to $filename.pdf"
               docker run --rm \
-                -v "${{ github.workspace }}:/app" \
+                -v "$PWD:/app" \
                 jmaupetit/md2pdf ./artifacts/$filename.md" "./artifacts/$filename.pdf"
             done
       
